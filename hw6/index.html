@@ -16,12 +16,33 @@
 <a href="..">Back</a>
 
 <h3>Design</h3>
-<p>I decided to replace the sphere from the tutorial with a torus and the hexagons with helices. These helices are not in the normal poly modeling menu; I discovered them by looking through Maya's Python documentation, and found that I could create helices.</p>
+<p>I decided to replace the sphere from the tutorial with a torus and the hexagons with helices. These helices are not in the normal poly modeling menu; I discovered them by looking through Maya's Python documentation, and found that I could create helices. The orbit of the helices around the center features a bit of anticipation as they initally rotate slightly counter-clockwise before changing direction to rotate mainly clockwise. As the helices move in and out, they also compress and stretch. While the tutorial used linear tangents, I changed my tangents for the rotation of the helices to be spline tangents. The script generates a camera, point light, and direcitonal light for the scene in addtion to creating and assigning the textures.</p>
 
 <h3>Objects</h3>
 <div>
   <div>
-    <div class="image-container"><img src="" height="270"></div>
+    <p>Overview</p>
+    <div class="image-container"><img src="Overview.png" height="270"></div>
+  </div>
+  <div>
+    <p>A helix at its default settings.</p>
+    <div class="image-container"><img src="ScrewNormal.png" height="270"></div>
+  </div>
+  <div>
+    <p>A compressed helix.</p>
+    <div class="image-container"><img src="ScrewCompressed.png" height="270"></div>
+  </div>
+  <div>
+    <p>An uncompressed helix.</p>
+    <div class="image-container"><img src="ScrewUncompressed.png" height="270"></div>
+  </div>
+  <div>
+    <p>The central torus..</p>
+    <div class="image-container"><img src="Torus.png" height="270"></div>
+  </div>
+  <div>
+    <p>Helix rotation tangents.</p>
+    <div class="image-container"><img src="Tangents.png" height="270"></div>
   </div>
 </div>
 
@@ -34,7 +55,8 @@
 
 <h3>Other Comments</h3>
 <p>Rendered with Maya's Software Renderer.</p>
-<p></p>
+<p>I originally wanted to make the helices spin around their y-axis like screws, but coudln't get this to work at the same time as the aim constraint.</p>
+<p>The rotation of the helices was originally done by rotating the helices directly but this stopped working after adding the locators for the inward/outward movement, so I changed it so that the locators were rotated. This gave me the desired result of making the helices orbit the torus.</p>
 
 <h3>Sources</h3>
 <ul>
