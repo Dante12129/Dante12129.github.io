@@ -40,6 +40,7 @@
 <p>Rendered with Maya's Software Renderer.</p>
 <p>For this project, I used the raycasting provided by Maya's Software renderer for the first time. This gives the body of the plane some nice reflections of the wings while also provided the shadow on landing that helps inform the viewer that the plane is getting closer to the runway.</p>
 </p>One trick I used to help the illusion of the plane being high was to stretch the grass texture over a large flattened cube so that it would be low-resolution and thus look far away. For the landing scene, I made the plane smaller in the x and z dimensions and set the texture to repeat so that it was higher-resolution and thus looks closer. Another trick for the first scene is that instead of moving the plane and camera over the ground, I translated and rotated the ground to match the plane's movement and thus make it look like the plane was moving. For the second scene, I actually made the plane and camera move.</p>
+<p>The runway was tricky to construct because the textures I found didn't match the dimensions of my original runway plane. So instead I created smaller squares which I instanced and then applied the textures and adjusted the UVs so that it looks like a continuous runway.</p>
 <p>In both scenes, I used an aim constraint parented to the plane to keep the camera looking at it. This sets the staging, as it ensures the plane is always the focus of the action. The staging is also helped in the second scene by moving the camera to a side view of the plane as it touches down so the squash of the wheels is visible.</p>
 <p>Squash and Stretch is used for the wheels of the plane when it touches down. Everything else on the plane is fairly rigid, so having the wheels squash from the impact gives a sense of the plane having weight when it lands. There is anticipation in the fact that the plane rolls slightly to its left before the main right roll.</p>
 <p>There are secondary actions on the plane in the form of the ailerons and propeller. The ailerons are the control surfaces on the trailing edge of the lower wing that allow it to roll. The model I found let me rotate them so I was able to have them as a secondary action to the plane itself's movement. The propeller also rotates as a secondary action. These rotations and many other movements, such as the flare just before landing and the rolling, are done in arcs. Additionally, many of the actions are slow-out, such as the propeller slowing for landing and the plane itself slowing down upon its rollout.</p>
@@ -47,12 +48,12 @@
 
 <h3>Sources</h3>
 <ul>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
+  <li><a href="https://free3d.com/3d-model/biplane-70181.html">Biplane (Model with Included Textures)</a></li>
+  <li><a href="https://www.the3rdsequence.com/texturedb/texture/1/green+grass/">Grass Texture</a></li>
+  <li><a href="https://www.deviantart.com/lauraseabrook/art/Runway-Texture-Set-Preview-788010437">Runway Texture</a></li>
+  <li><a href="https://www.pexels.com/photo/photo-of-blue-sky-912110/">Sky Texture</a></li>
+  <li><a href="https://www.myinstants.com/search/?name=seat">Seatbelt Sound</a></li>
+  <li><a href="https://www.soundjay.com/transportation/sounds/propeller-plane-flying-steady-01.mp3">Propeller Sound</a></li>
 </ul>
 
 <a href="..">Back</a>
